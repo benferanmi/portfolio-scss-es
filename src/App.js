@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import MovieRow from './movieRow';
 import $ from 'jquery'
 import './App.css';
-import './style.css';
 
 class App extends Component {
   constructor(props) {
@@ -87,7 +86,7 @@ class App extends Component {
       </table>
 
       <input onChange={this.searchChangeHandler} placeholder="Enter Search term" className="moviessearch"/>
-      <button type="submit" onClick={this.handleClick}>Search</button>
+      <button type="button" className='ml-30 button' onClick={this.handleClick}>Search</button>
 
       {this.state.rows}
     </div>

@@ -7,17 +7,17 @@ class MovieRow extends React.Component {
       // console.log(this.props.movie.id)
   }
     render() {
-        return <table key={this.props.movie.id}>
-        <tbody>
-          <tr>
+        return <table key={this.props.movie.id} className="table" >
+        <tbody className="tbody">
+          <tr className="tr">
             <td>
               <img className='posterImg' src={ "https://image.tmdb.org/t/p/w185/" + this.props.movie.poster_path} alt="poster"/>
             </td>
 
-            <td>
-              <h2>{this.props.movie.title}</h2> <br/>
-              <p>{this.props.movie.overview}</p> <br/>
-              <input type="button" onClick={this.viewMovie.bind(this)} value="view"/>
+            <td className="posterData">
+              <h2 className="posterHeading">{this.props.movie.title}</h2>
+              <p>{this.props.movie.overview}</p>
+              <input className="button3" type="button" onClick={this.viewMovie.bind(this)} value="view"/>
             </td>
           </tr>
         </tbody>
