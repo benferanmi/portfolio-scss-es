@@ -1,0 +1,17 @@
+.logo__container {
+    position: absolute;
+    top: -550px;
+    z-index: -1;
+    opacity: 1;
+    rotate: 10%;
+    width: 400px;
+    height: 609px;
+    right: -40%;
+
+    img {
+        width: 140%;
+        transform: rotate(10deg);
+        opacity: 0;
+        animation: bounceIn 1s forwards;
+    }
+}

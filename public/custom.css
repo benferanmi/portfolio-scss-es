@@ -1074,6 +1074,7 @@
   .mr-150 {
     margin-right: 150px !important;
   }
+  /***buttons****/
   
   .button {
     background: #f9b707;
@@ -1174,6 +1175,30 @@
     color: black;
     background-color: goldenrod;
   }
+  .flat__button {
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-family: sans-serif; 
+    text-decoration: none;
+    padding: 18px auto;
+    border: 1px solid black;
+    margin-top: 10px;
+    float: left;
+    animation: fadeIn 1s 1.8s backwards;
+    white-space: nowrap;
+
+   }
+
+   .flat__button:hover {
+    color: black;
+    background-color: #f9b707;
+   }
+
+
+/**/
+
   .width-65 {
     width: 65px !important;
   } 
