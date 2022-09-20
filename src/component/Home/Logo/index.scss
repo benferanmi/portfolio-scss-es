@@ -15,3 +15,38 @@
         animation: bounceIn 1s forwards;
     }
 }
+
+@media (min-width: 100px) and (max-width: 520px) {
+    .logo__container{
+        position: absolute;
+        top: -300px;
+        left: -4%;
+
+        img {
+            width: 50%;
+        }
+    }
+    
+}
+@media (min-width: 520px) and (max-width: 768px) {
+    .logo__container{
+        position: absolute;
+        top: -450px;
+        left: -4%;
+
+        img {
+            width: 75%;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 850px) {
+    .logo__container{
+        right: -30%;
+        top: -450px;
+        
+        img {
+            width: 100%;
+        }
+    }
+}

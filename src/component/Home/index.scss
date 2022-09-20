@@ -1,4 +1,6 @@
 .home__page {
+    height: 100%;
+    width: 100%;
     .text-zone {
         position: absolute;
         left: 10%;
@@ -61,4 +63,30 @@
     }
     
 
+}
+
+@media (min-width: 100px) and (max-width: 520px) {
+    h1 {
+        font-size: 40px !important;
+    }
+    h2 {
+        width: 200px !important;
+    }
+}
+@media (min-width: 520px) and (max-width: 768px) {
+    h1 {
+        font-size: 48px !important;
+    }
+    h2 {
+        width: 400px !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 850px) {
+    h1 {
+        font-size: 50px !important;
+    }
+    h2 {
+        width: 600px !important;
+    }
 }

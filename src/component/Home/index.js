@@ -46,7 +46,7 @@ const Home = () => {
                 <Link to="/contact" className="flat__button">CONTACT ME</Link>
             </div>
 
-            <LogoPg />
+            <LogoPg/>
         </div>
     )
 }
