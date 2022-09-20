@@ -167,7 +167,7 @@
                     margin-left: 5%;
                     
                     .head1 {
-                        flex: 0.5;
+                        flex: 1;
                     }
                     .head2 {
                         display: none;
@@ -178,15 +178,14 @@
         .contact-sp {
             margin-left: 5%;
             .contact-map {
-                flex: 0.6;
             background: rgb(99, 99, 99);
-            float: right;
+            bottom: 0;
             width: 200px;
             height: 200px;
             margin-left: 20px;
             position: absolute;
             right: 5%;
-            top: 30%;
+            top: 80%;
             }
 
             .contact-form {
