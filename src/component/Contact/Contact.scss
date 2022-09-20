@@ -189,6 +189,7 @@
             }
 
             .contact-form {
+                flex: 1;
                 gap: 5px;
                 textarea {
                     min-height: 40px;
@@ -199,6 +200,7 @@
                 input {
                     height: 30px;
                     margin-bottom: 5px;
+                    width: 90%;
                 }
             }
         }
