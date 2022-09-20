@@ -4,8 +4,10 @@ html {
 
 body {
   margin: 0;
+  width: 100%;
   font: 300 11px/1.4 'Helvetica Neue', 'sans-serif';
   color: #444;
+  overflow-x: hidden;
   background-color: aqua;
   overflow: hidden;
   display: block;
