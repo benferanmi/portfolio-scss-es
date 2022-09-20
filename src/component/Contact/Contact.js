@@ -2,8 +2,11 @@ import Sidebar from '../Sidebar/Index';
 import './Contact.scss'
 import AnimatedLetters from '../AnimatedLetters/index'
 import { useRef, useState } from 'react';
-import emailjs from '@emailjs/browser'
-
+import emailjs from '@emailjs/browser';
+import { MapContainer } from 'react-leaflet/MapContainer'
+import { TileLayer } from 'react-leaflet/TileLayer'
+import { Marker, } from 'react-leaflet/Marker'
+import { Popup } from 'react-leaflet/Popup'
 
 const Contact = () => {
     const [letterClass] = useState('text-animate')
@@ -53,14 +56,26 @@ const Contact = () => {
                         idx={15}/>
                     </h1>
 
-                    <p>
+                        <div className='contact-head'>
+                        <p className='head1'>
                         I am interested in freelance opportunities - especially 
                         ambitious or large projects. However, if you have other request 
                         or question, don't hesitiate to contact me using the forn either.
-                    </p>
-                        <div className='contact-form'>
+                        </p>
+                        <div className='head2'>
+                            <h2>Other Details.</h2>
+                        Benjamin Feranmi
+                            <br/>
+                            Nigeria
+                            <br/>
+                            Branka Radiman 19, 665800 <br/> MitriBrant Area <br/>
+                            <span>Opaferanmi01@gmail.com</span>
+                        </div>
+                        </div>
+                        <div className='contact-sp'>
                             
-                            <form ref={refFrom} onSubmit={sendEmail}>
+                           <div className='contact-form'>
+                           <form ref={refFrom} onSubmit={sendEmail}>
                                     <input 
                                     className='half'
                                     type="text" 
@@ -89,6 +104,16 @@ const Contact = () => {
                                
                                     <input type="submit" className='flat-button' value="SEND" />
                                 </form>
+                           </div>
+
+                           <div className='contact-map'>
+                            <MapContainer center={[7.790912432212298, 4.5523312863139935]} zoom={13}> 
+                                <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"/>
+                                <Marker position={[7.790912432212298, 4.5523312863139935]}>
+                                    <Popup>Benjamin Lives Here, Come for a cup of coffee :) </Popup>
+                                </Marker>
+                            </MapContainer>
+                           </div>
                             
                         </div>
                 </div>

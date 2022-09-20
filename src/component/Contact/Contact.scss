@@ -6,99 +6,149 @@
             h1 {
                 font-size: 53px;
                 color: goldenrod;
+                margin-bottom: 0;
             }
-            p {
-                font-size: 18px;
-                color: gray;
+            .contact-head {
+                display: flex;
+                flex-direction: row;
+                flex: 1;
+                gap: 30px;
+              
+                p {
+                    font-size: 18px;
+                    color: gray;
+                }
+                .head1 {
+                    flex: 0.413;
+                    
+                }
+                .head2 {
+                    position: absolute;
+                    top: 10%;
+                    right: 5%;
+                    flex: 0.3;
+                    font-size: 16px;
+                    z-index: 999999;
+                    padding-left: 10px;
+                    padding-bottom: 10px;
+                    width: 250px;
+                    font-family: "Helvetica";
+                    color: gray;
+                    background-color: black;
+                    margin: 10px auto;
+                    opacity: 0;
+                    animation: fadeIn 1s 1.5s;
+                    animation-fill-mode: forwards ;
+                    span {
+                        font-size: 16px;
+                        display: block;
+                        color: goldenrod;
+                        font-size: 17px;
+                    }
+                }
             }
         }
-    }
+    }   
+    
+    .contact-sp {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    color: black;
+    gap: 30px;
 
     .contact-form {
-        width: 80%;
-        margin-top: 20%;
+        flex: 0.4;
 
-        ul {
-            padding: 0;
-            margin: 0;
-            position: absolute;
-            width: 80%;
-            bottom: 20%;
-            
-        }
+        input {
+            margin-bottom: 20px;
+            width: 100%;
+            color: black;
+            background-color: rgb(209, 209, 209);
+            height: 35px;
+            border-radius: 5px;
+            padding-left: 10px;
+            font-size: 16px;
+            font-family: sans-serif;
+            outline: none;
+            border: none;
 
-        li {
-            padding: 0;
-            margin: 0;
-            list-style: none;
-            margin-bottom: 10px;
-            overflow: hidden;
-            display: block;
-            position: relative;
-            opacity: o;
-            animation: fadeInUp 2s 2s;
-            animation-fill-mode: forwards;
-            clear: both;
-        }
-
-        li.half {
-            width: 40%;
-            margin-left: 2%;
-            float: left;
-            clear: none;
-
-            &:first-child {
-                margin-left: 0;
-
+            &:nth-child(1) {
+                opacity: 0;
+                animation: bounceIn 1s 1s;
+                animation-fill-mode: forwards;
+            }
+            &:nth-child(2) {
+                opacity: 0;
+                animation: bounceIn 1.5s 1s;
+                animation-fill-mode: forwards;
+            }
+            &:nth-child(3) {
+                opacity: 0;
+                animation: bounceIn 2s 1s;
+                animation-fill-mode: forwards;
             }
         }
-    }
-    input[type='email'] {
-        width: 90%;
-        border: 0;
-        background: goldenrod;
-        font-size: 16px;
-        color: black;
-        padding: 0 20px;
-        box-sizing: border-box;
-    }
-    input[type='text'] {
-        width: 80%;
-        border: 0;
-        background: goldenrod;
-        font-size: 16px;
-        color: black;
-        padding: 0 20px;
-        box-sizing: border-box;
-        float: left;
-    }
 
-    textarea {
-        width: 80%;
-        border: 0;
-        background: goldenrod;
-        color: black;
-        font-size: 16px;
-        height: 50px;
-        min-height: 150px;
-        box-sizing: border-box;
-        float: left;
-
-    }
-    .flat-button {
-        float: left;
-        height: 30px;
-        width: 80px;
-        color: white;
-        background: black;
-
-        &:hover {
-            color: black;
-            background: goldenrod;
-            border: 5px;
+        .flat-button {
+            width: 50%;
+            text-align: center;
+            display: block;
+            left: 25%;
+            position: relative;
+            height: 30px;
             border: 2px solid black;
-            border-radius: 5px;
+            border-radius: 15px;
+            background-color: goldenrod;
+            margin-top: 10px;
+            text-decoration: none;
+
+
+            &:hover {
+                color: white;
+                background-color: black;
+                border: 2px solid goldenrod;
+            }
         }
+
+        textarea {
+            min-width: 100%;
+            background-color: rgb(209, 209, 209);
+            padding-top: 5px;
+            padding-left: 10px;
+            min-height: 30px;
+            height: 50px;
+            border: 0;
+            font-size: 16px;
+            box-sizing: border-box;
+            max-height: 150px;
+            opacity: 0;
+            resize: vertical;
+            animation: bounceIn 2.5s 1s;
+            animation-fill-mode: forwards;
+        }
+
+
     }
-    
+    .contact-map {
+        flex: 0.6;
+    background: rgb(99, 99, 99);
+    float: right;
+    width: 600px;
+    height: 80%;
+    margin-left: 20px;
+    position: absolute;
+    right: 5%;
+    top: 10%;
+    }
+}
+}
+
+.leaflet-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    opacity: 0;
+    animation: backInRight 1s 1.2s;
+    animation-fill-mode: forwards;
 }
