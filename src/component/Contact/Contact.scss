@@ -1,0 +1,104 @@
+.contact {
+    .contact__details {
+        margin-left: 10%;
+        width: 80%;
+        .text-zone {
+            h1 {
+                font-size: 53px;
+                color: goldenrod;
+            }
+            p {
+                font-size: 18px;
+                color: gray;
+            }
+        }
+    }
+
+    .contact-form {
+        width: 80%;
+        margin-top: 20%;
+
+        ul {
+            padding: 0;
+            margin: 0;
+            position: absolute;
+            width: 80%;
+            bottom: 20%;
+            
+        }
+
+        li {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            margin-bottom: 10px;
+            overflow: hidden;
+            display: block;
+            position: relative;
+            opacity: o;
+            animation: fadeInUp 2s 2s;
+            animation-fill-mode: forwards;
+            clear: both;
+        }
+
+        li.half {
+            width: 40%;
+            margin-left: 2%;
+            float: left;
+            clear: none;
+
+            &:first-child {
+                margin-left: 0;
+
+            }
+        }
+    }
+    input[type='email'] {
+        width: 90%;
+        border: 0;
+        background: goldenrod;
+        font-size: 16px;
+        color: black;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+    input[type='text'] {
+        width: 80%;
+        border: 0;
+        background: goldenrod;
+        font-size: 16px;
+        color: black;
+        padding: 0 20px;
+        box-sizing: border-box;
+        float: left;
+    }
+
+    textarea {
+        width: 80%;
+        border: 0;
+        background: goldenrod;
+        color: black;
+        font-size: 16px;
+        height: 50px;
+        min-height: 150px;
+        box-sizing: border-box;
+        float: left;
+
+    }
+    .flat-button {
+        float: left;
+        height: 30px;
+        width: 80px;
+        color: white;
+        background: black;
+
+        &:hover {
+            color: black;
+            background: goldenrod;
+            border: 5px;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+    }
+    
+}

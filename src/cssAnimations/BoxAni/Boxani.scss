@@ -1,0 +1,73 @@
+.outer {
+    width: 50%;
+    gap: 20px;
+    .inside {
+        animation-name: spinncube;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 12s;
+    transform-style: preserve-3d;
+    transform-origin: 100px 100px 0;
+    margin-left:  calc(50% - 100px);
+
+
+        img {
+            width: 40px ;
+        }
+
+        div {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border: 1px solid white ;
+            background-color: goldenrod;
+            text-align: center;
+            font-size: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 20px 0px rgb(0, 0, 0);
+        }
+            .set1 {
+                transform: translateZ(100px);
+            }
+        .set2 {
+            transform: rotateY(90deg) translateZ(100px);
+        }
+        .set3 {
+            transform:rotateY(90deg) rotateX(90deg) translateZ(100px);
+        }
+        .set4 {
+            transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+        }
+        .set5 {
+            transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+        }
+        .set6 {
+            transform: rotateY(-90deg) translateZ(100px);
+        }
+        
+        }
+        @keyframes spinncube {
+            from,
+            to {
+                transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg)
+            }
+            16% {
+                transform: rotateY(-90deg);
+            }
+            33% {
+                transform: rotateY(-90deg) rotateZ(90deg);
+            }
+            50% {
+                transform: rotateY(-180deg) rotateZ(90deg);
+            }
+            66% {
+                transform: rotateY(-270deg) rotateZ(90deg);
+            }
+            83% {
+                transform: rotateX(90deg);
+            }
+        } 
+    }
+    
